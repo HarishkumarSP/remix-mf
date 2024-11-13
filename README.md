@@ -3,38 +3,57 @@ A micro-frontend app in remix
 
 - 📖 [Remix docs](https://remix.run/docs)
 
+
 ## Development
 
-Run the dev server:
+You can run the application from the root folder, 
+we have host-app and remote-app
 
+To run the host
 ```shellscript
-npm run dev
+pnpm dev:host
 ```
+
+To run the remote
+```shellscript
+pnpm dev:remote
+```
+Currently dev mode is being failed , so pls try out the build and start mode
 
 ## Deployment
 
 First, build your app for production:
 
+To build your app on host
 ```sh
-npm run build
+pnpm build:host
+```
+To build your app on remote
+```sh
+pnpm build:remote
 ```
 
+To build both of your app
+```sh
+pnpm build:all
+```
+-----------------------------------
 Then run the app in production mode:
 
+To start your host app
 ```sh
-npm start
+pnpm start:host
+```
+To start your remote app
+```sh
+pnpm start:remote
+```
+To start you all app at once
+```sh
+pnpm start:all
 ```
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
+``Note: Currently remote app only running without any issues(but without styling)``
 
 ## Styling
 
