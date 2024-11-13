@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import RemoteComponent from "~/components/RemoteComponent";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -28,6 +29,7 @@ export default function Index() {
 						/>
 					</div>
 				</header>
+				<RemoteComponent />
 			</div>
 		</div>
 	);
